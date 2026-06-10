@@ -20,3 +20,9 @@ def test_home_page_has_title(client):
     """Test that the home page contains our site title."""
     response = client.get("/")
     assert b"My Flask Site" in response.data
+
+
+def test_home_page_has_bootstrap(client):
+    """Test that Bootstrap CSS is linked."""
+    response = client.get("/")
+    assert b"bootstrap" in response.data
