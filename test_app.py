@@ -26,3 +26,9 @@ def test_home_page_has_bootstrap(client):
     """Test that Bootstrap CSS is linked."""
     response = client.get("/")
     assert b"bootstrap" in response.data
+
+
+def test_contact_page_loads(client):
+    """Test that the contact page returns status 200."""
+    response = client.get("/contact")
+    assert response.status_code == 200
