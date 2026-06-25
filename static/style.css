@@ -18,7 +18,7 @@ body {
 }
 
 .carousel-caption {
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
   padding: 20px;
   border-radius: 10px;
 }
@@ -88,4 +88,49 @@ section h2 {
 
 .contact-info a:hover {
   text-decoration: underline;
+}
+/* Contact Form Styles */
+.contact-form {
+  padding: 30px;
+  background-color: #1f7831;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+  padding: 12px;
+  font-size: 1rem;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+  border-color: #946029;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.contact-form .btn {
+  padding: 12px;
+  font-weight: 600;
+}
+
+/* Make form labels slightly bold */
+.contact-form .form-label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  padding-right: 2.25rem;
+}
+
+.search-icon {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
 }

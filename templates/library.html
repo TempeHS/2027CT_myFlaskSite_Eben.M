@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block title %}Library{% endblock %} {% block
+content %}
+<div class="container mt-4 pt-4">
+  <h1>Page Library</h1>
+  <ul class="list-group mt-3">
+    {% for p in pages %}
+    <li class="list-group-item">
+      <a href="{{ url_for(p.endpoint) }}">{{ p.title }}</a>
+      <div class="small text-muted">{{ p.text }}</div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
