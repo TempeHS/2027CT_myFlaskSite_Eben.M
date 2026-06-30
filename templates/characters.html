@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block title %}Characters{% endblock %} {% block
+content %}
+<div class="container mt-5">
+  <h1>Characters in Attack on Titan</h1>
+  <p class="lead">WIP: Coming soon!</p>
+  <ul class="list-group mt-3">
+    {% for c in characters %}
+    <li class="list-group-item">
+      <a href="{{ url_for(c.endpoint) }}">{{ c.title }}</a>
+      <div class="small text-muted">{{ c.text }}</div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

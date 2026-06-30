@@ -1,6 +1,6 @@
 import pytest
 from flask import url_for
-from app import app, PAGES
+from app import app, PAGES, CHARS
 
 
 @pytest.fixture
@@ -20,7 +20,7 @@ def test_home_page_loads(client):
 def test_home_page_has_title(client):
     """Test that the home page contains our site title."""
     response = client.get("/")
-    assert b"My Flask Site" in response.data
+    assert b"SNK_Wiki" in response.data
 
 
 def test_home_page_has_bootstrap(client):
@@ -68,6 +68,20 @@ def test_library_page_has_all_links(client):
         for page in PAGES:
             expected_href = f'href="{url_for(page["endpoint"])}"'.encode()
             expected_title = page["title"].encode()
+
+            assert expected_href in response.data
+            assert expected_title in response.data
+
+
+def test_characters_page_has_all_links(client):
+    """Test that characters page contains links for all entries in PAGES."""
+    response = client.get("/characters")
+    assert response.status_code == 200
+
+    with app.test_request_context():
+        for char in CHARS:
+            expected_href = f'href="{url_for(char["endpoint"])}"'.encode()
+            expected_title = char["title"].encode()
 
             assert expected_href in response.data
             assert expected_title in response.data
