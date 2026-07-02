@@ -30,23 +30,111 @@
         <li class="nav-item">
           <a class="nav-link" href="{{ url_for('characters') }}">Characters</a>
         </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            data-bs-auto-close="outside"
+            aria-expanded="false"
+          >
+            Titans
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-dark"
+            aria-labelledby="navbarDropdown"
+          >
+            <li>
+              <a class="dropdown-item" href="{{ url_for('titan') }}"
+                >Pure Titan</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="{{ url_for('abnormal') }}"
+                >Abnormal Titans</a
+              >
+            </li>
+            <!-- Sub-menu -->
+            <li class="dropend">
+              <a
+                class="dropdown-item dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                9 Titans
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a class="dropdown-item" href="{{ url_for('attack') }}"
+                    >Attack Titan</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{{ url_for('founding') }}"
+                    >Founding Titan</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{{ url_for('armoured') }}"
+                    >Armoured Titan</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{{ url_for('female') }}"
+                    >Female Titan</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{{ url_for('colossal') }}"
+                    >Colossal Titan</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{{ url_for('beast') }}"
+                    >Beast Titan</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{{ url_for('jaw') }}"
+                    >Jaw Titan</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{{ url_for('cart') }}"
+                    >Cart Titan</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{{ url_for('warhammer') }}"
+                    >Warhammer Titan</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
-  </div>
-
-  <form class="d-flex" role="search" method="get" action="{{ url_for('search') }}">
-        <input
-          class="form-control me-2"
-          type="search"
-          name="q"
-          value="{{ request.args.get('q', '') }}"
-          placeholder="Search..."
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-light" type="submit">
-          <i class="fas fa-search"></i>
-        </button>
-      </form>
-    </div>
+    <form
+      class="d-flex"
+      role="search"
+      method="get"
+      action="{{ url_for('search') }}"
+    >
+      <input
+        class="form-control me-2"
+        type="search"
+        name="q"
+        value="{{ request.args.get('q', '') }}"
+        placeholder="Search..."
+        aria-label="Search"
+      />
+      <button class="btn btn-outline-light" type="submit">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
   </div>
 </nav>

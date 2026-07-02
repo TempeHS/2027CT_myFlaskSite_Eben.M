@@ -152,6 +152,8 @@ block content %}
 <!-- Rest of page content -->
 <div class="container mt-5">
   <h1>Welcome!</h1>
-  <p class="lead">This site is built with Flask and Bootstrap.</p>
+  <p class="lead">More information below</p>
+  <a class="btn btn-primary" href="{{ url_for('library') }}">Library</a>
+  <a class="btn btn-primary" href="{{ url_for('about') }}">About Us</a>
 </div>
 {% endblock %}

@@ -21,16 +21,81 @@ PAGES = [
         "endpoint": "mikasa",
         "text": "Work in Progress: Coming Soon!",
     },
+    {
+        "title": "Armin Arlert",
+        "endpoint": "armin",
+        "text": "Work in Progress: Coming Soon!",
+    },
+    {
+        "title": "Pure Titan",
+        "endpoint": "titan",
+        "text": "Work in Progress: Coming Soon!",
+    },
+    {
+        "title": "Abnormal Titan",
+        "endpoint": "abnormal",
+        "text": "Work in Progress: Coming Soon!",
+    },
+    {
+        "title": "Attack Titan",
+        "endpoint": "attack",
+        "text": "Work in Progress: Coming Soon!",
+    },
+    {
+        "title": "Founding Titan",
+        "endpoint": "founding",
+        "text": "Work in Progress: Coming Soon!",
+    },
+    {
+        "title": "Armoured Titan",
+        "endpoint": "armoured",
+        "text": "Work in Progress: Coming Soon!",
+    },
+    {
+        "title": "Female Titan",
+        "endpoint": "female",
+        "text": "Work in Progress: Coming Soon!",
+    },
+    {
+        "title": "Colossal Titan",
+        "endpoint": "colossal",
+        "text": "Work in Progress: Coming Soon!",
+    },
+    {
+        "title": "Beast Titan",
+        "endpoint": "beast",
+        "text": "Work in Progress: Coming Soon!",
+    },
+    {
+        "title": "Jaw Titan",
+        "endpoint": "jaw",
+        "text": "Work in Progress: Coming Soon!",
+    },
+    {
+        "title": "Cart Titan",
+        "endpoint": "cart",
+        "text": "Work in Progress: Coming Soon!",
+    },
+    {
+        "title": "Warhammer Titan",
+        "endpoint": "warhammer",
+        "text": "Work in Progress: Coming Soon!",
+    },
 ]
 CHARS = [
     {
         "title": "Eren Yeager",
         "endpoint": "eren",
-        "text": "Eren Yeager is the protagonist of Attack on Titan",
+        "text": "Work in Progress: Coming Soon!",
     },
     {
         "title": "Mikasa Ackerman",
         "endpoint": "mikasa",
+        "text": "Work in Progress: Coming Soon!",
+    },
+    {
+        "title": "Armin Arlert",
+        "endpoint": "armin",
         "text": "Work in Progress: Coming Soon!",
     },
 ]
@@ -64,6 +129,66 @@ def eren():
 @app.route("/mikasa")
 def mikasa():
     return render_template("mikasa.html")
+
+
+@app.route("/armin")
+def armin():
+    return render_template("armin.html")
+
+
+@app.route("/titan")
+def titan():
+    return render_template("titan.html")
+
+
+@app.route("/abnormal")
+def abnormal():
+    return render_template("abnormal.html")
+
+
+@app.route("/attack")
+def attack():
+    return render_template("attack.html")
+
+
+@app.route("/founding")
+def founding():
+    return render_template("founding.html")
+
+
+@app.route("/armoured")
+def armoured():
+    return render_template("armoured.html")
+
+
+@app.route("/female")
+def female():
+    return render_template("female.html")
+
+
+@app.route("/colossal")
+def colossal():
+    return render_template("colossal.html")
+
+
+@app.route("/beast")
+def beast():
+    return render_template("beast.html")
+
+
+@app.route("/jaw")
+def jaw():
+    return render_template("jaw.html")
+
+
+@app.route("/cart")
+def cart():
+    return render_template("cart.html")
+
+
+@app.route("/warhammer")
+def warhammer():
+    return render_template("warhammer.html")
 
 
 @app.route("/search")
