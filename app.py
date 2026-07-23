@@ -123,72 +123,72 @@ def privacy():
 
 @app.route("/eren")
 def eren():
-    return render_template("eren.html")
+    return render_template("characters/eren.html")
 
 
 @app.route("/mikasa")
 def mikasa():
-    return render_template("mikasa.html")
+    return render_template("characters/mikasa.html")
 
 
 @app.route("/armin")
 def armin():
-    return render_template("armin.html")
+    return render_template("characters/armin.html")
 
 
 @app.route("/titan")
 def titan():
-    return render_template("titan.html")
+    return render_template("titans/titan.html")
 
 
 @app.route("/abnormal")
 def abnormal():
-    return render_template("abnormal.html")
+    return render_template("titans/abnormal.html")
 
 
 @app.route("/attack")
 def attack():
-    return render_template("attack.html")
+    return render_template("titans/attack.html")
 
 
 @app.route("/founding")
 def founding():
-    return render_template("founding.html")
+    return render_template("titans/founding.html")
 
 
 @app.route("/armoured")
 def armoured():
-    return render_template("armoured.html")
+    return render_template("titans/armoured.html")
 
 
 @app.route("/female")
 def female():
-    return render_template("female.html")
+    return render_template("titans/female.html")
 
 
 @app.route("/colossal")
 def colossal():
-    return render_template("colossal.html")
+    return render_template("titans/colossal.html")
 
 
 @app.route("/beast")
 def beast():
-    return render_template("beast.html")
+    return render_template("titans/beast.html")
 
 
 @app.route("/jaw")
 def jaw():
-    return render_template("jaw.html")
+    return render_template("titans/jaw.html")
 
 
 @app.route("/cart")
 def cart():
-    return render_template("cart.html")
+    return render_template("titans/cart.html")
 
 
 @app.route("/warhammer")
 def warhammer():
-    return render_template("warhammer.html")
+    return render_template("titans/warhammer.html")
 
 
 @app.route("/search")

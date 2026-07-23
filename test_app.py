@@ -29,10 +29,16 @@ def test_home_page_has_bootstrap(client):
     assert b"bootstrap" in response.data
 
 
-def test_home_page_has_searchbar(client):
+def test_navbar_has_searchbar(client):
     """Test that navbar contains searchbar."""
     response = client.get("/")
     assert b"search" in response.data
+
+
+def test_navbar_has_dropdown(client):
+    """Test that navbar contains dropdown."""
+    response = client.get("/")
+    assert b"dropdown" in response.data
 
 
 def test_contact_page_loads(client):

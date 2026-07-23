@@ -1,5 +1,5 @@
-{% extends 'base.html' %} {% block title %}About Us - SNK_Wiki{% endblock %} {% block
-content %}
+{% extends 'base.html' %} {% block title %}About Us - SNK_Wiki{% endblock %} {%
+block content %}
 <div class="container mt-5">
   <h1>About Us</h1>
   <p class="lead">
@@ -10,5 +10,82 @@ content %}
     This site ensures reliable and accurate information about the series and is
     created by a Year 9 student in Tempe High School
   </p>
+  <!-- FAQ Section -->
+  <div class="row mt-5">
+    <div class="col-12">
+      <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq1">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faqAnswer1"
+            >
+              Why was this site made?
+            </button>
+          </h2>
+          <div
+            id="faqAnswer1"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              This site was made as a Year 9 student's Computer Science project
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq2">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faqAnswer2"
+            >
+              How do I get in contact?
+            </button>
+          </h2>
+          <div
+            id="faqAnswer2"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Go to the Contact Us page and submit an inquiry. Or, email us at
+              info@myflasksite.com
+              <a href="{{ url_for('contact') }}" class="btn btn-primary"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq3">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faqAnswer3"
+            >
+              What do we promise on our website?
+            </button>
+          </h2>
+          <div
+            id="faqAnswer3"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              This site ensures accurate, valid and reliable information about
+              Attack on Titan
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock %}
