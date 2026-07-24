@@ -34,7 +34,7 @@ This is the most important part of your documentation — it shows your website 
   [![Website Walkthrough](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
 
   OR link a screen recording stored in the repository:
-  [Watch the Walkthrough](./docs/walkthrough.mp4)
+  [Watch the Walkthrough](https://drive.google.com/file/d/1vUXRoiMEzby5TxHFe-yK95EydUjCHErA/view?usp=sharing))
 -->
 
 | Field            | Detail |
