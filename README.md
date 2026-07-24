@@ -29,13 +29,9 @@
 
 This is the most important part of your documentation — it shows your website running.
 
-<!--
-  Embed a ~2 minute walkthrough. Replace VIDEO_ID with your YouTube video ID:
-  [![Website Walkthrough](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
 
-  OR link a screen recording stored in the repository:
   [Watch the Walkthrough](https://drive.google.com/file/d/1vUXRoiMEzby5TxHFe-yK95EydUjCHErA/view?usp=sharing))
--->
+-->](https://drive.google.com/file/d/1vUXRoiMEzby5TxHFe-yK95EydUjCHErA/view?usp=sharing)
 
 | Field            | Detail |
 | ---------------- | ------ |
